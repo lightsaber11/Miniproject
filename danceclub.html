@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CA | Photography</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="danceclub.css">
+            <!-- Font styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <!-- NavBar -->
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <h2>Clubs & Activities</h2>
+            </div>
+            <nav>
+                <ul>
+                    <!--
+                    <li>
+                        <a href="index.html" >Home</a>
+                    </li> 
+                    <li>
+                        <a href="">Clubs</a>
+                    </li>
+                -->
+                    <li>
+                        <a class="link" href="homepage.html"><< Back</a>
+                    </li>
+                    <li>
+                        <a  class="link" href="https://www.mvgrce.com/about/about">More about us</a>
+                    </li>
+                </ul>
+              <div class="login">
+                    <a class="active" href="">Login</a>
+                </div>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="login">
+                <a class="active" href="admin_signin.html">Login</a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+    </header>
+        <div class="topcontainer">
+            <h3>#DANCE CLUB</h3>
+            Dance has been a popular form of expression and entertainment for centuries,
+            and dance clubs have become an integral part of modern culture.Whether you're a seasoned
+            dancer or a newcomer to the scene, there's something exhilarating about the energy and excitement of a dance club. <br><br>
+            At MVGR we form a dance club with the intrested and well seasoned students who can inspire more students and follow their dreams.
+            So if you're looking for a new hobby, a way to meet new people, or a way to get more exercise, joining a dance club could be just what you need. Don't be afraid to take the leap and try something new - you might just discover a passion for dance that you never knew you had!
+            
+        </div>
+    <div class="carousel">
+        <img src="/photographyclub/dance1.png" class="carousel-image" alt="music club image">
+        <img src="/photographyclub/dance2.png" class="carousel-image" alt="dram club image">
+        <img src="/photographyclub/dance3.png" class="carousel-image" alt="dram club image">
+        <img src="/photographyclub/dance4.png" class="carousel-image" alt="dram club image">
+    </div>
+      <script>
+        const carouselImages = document.querySelectorAll(".carousel-image");
+        let currentImageIndex = 0;
+        const maxImageIndex = carouselImages.length - 1;
+        
+        function showNextImage() {
+          const currentImage = carouselImages[currentImageIndex];
+          currentImage.classList.remove("active");
+          currentImageIndex = currentImageIndex === maxImageIndex ? 0 : currentImageIndex + 1;
+          const nextImage = carouselImages[currentImageIndex];
+          nextImage.classList.add("active");
+        }
+        
+        setInterval(showNextImage, 5000);
+        </script>
+        <div class="bottomcontainer">
+            <h4>#How we work & What you get</h4>
+            Dance club can offer a wide range of benefits to those who join. Firstly, dancing is a skill that can be learned at any age,
+            and joining a dance club can provide an excellent opportunity for people to develop their skills and learn new moves.
+             Whether you're a beginner or an experienced dancer, a dance club can offer a supportive environment to practice and improve your technique.<br>
+            Secondly, dancing is a great way to stay active and improve your physical fitness. Dancing involves movement and coordination,
+             which can help to build muscle tone and improve cardiovascular health. 
+             This can be particularly beneficial for those who don't enjoy traditional forms of exercise, such as running or weightlifting.<br>
+            Thirdly, dance clubs offer a social environment where people can meet new friends and connect with others who share their interests.
+             Dancing is a great way to break down barriers and connect with people from all walks of life.
+              The social aspect of dance clubs can provide a sense of community and support,
+               which can be particularly valuable for people who are new to an area or looking to expand their social circle.<br>
+               Fourthly, dance clubs provide a creative outlet where people can express themselves and explore new cultures.
+                Dance is an art form that allows people to express their emotions, feelings, and personalities in a unique way.
+                 Different styles of dance are often rooted in different cultures,
+                  and joining a dance club can provide an opportunity to learn more about these cultures and traditions.<br>
+                  Finally, dance clubs are simply fun. Dancing is an enjoyable activity that can provide a sense of liberation and release.
+                   It's a chance to let loose, forget your worries, and have a good time.
+                    Joining a dance club can be a great way to add some excitement to your life and try something new.
+        </div>
